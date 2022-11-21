@@ -1,0 +1,61 @@
+div{
+    text-align: center;
+}
+h1{
+    font-size: 5pc;
+}
+img{
+    width: 250px;
+}
+button{
+    background-color: blue;
+    padding: 8px;
+    color: white;
+    width: 150px;
+
+}
+input{
+    width: 25%;
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    
+}
+/* these here are for Sign up page*/ 
+.PhoneNumber{
+    margin-right: 50px;
+}
+.email{
+    margin-right: 200px;
+
+}
+.Password{
+    margin-right: 180px;
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/ 
+
+/* these here are for Announcements page*/ 
+
+}
+.picture{
+    margin-left: 750px;
+    width: 80px;
+
+}
+h2{
+    display: inline;
+    font-size: 50px;
+    margin-left: 50px;
+    float: left;
+}
+p{
+    display: inline;
+    margin-left: 800px;
+    float: right;
+
+}
+h3{
+    display: inline;
+    font-size: 50px;
+    margin-left: 50px;
+    float: right;
+}
