@@ -8,7 +8,7 @@ img{
     width: 250px;
 }
 button{
-    background-color: blue;
+    background-color: dodgerblue;
     padding: 8px;
     color: white;
     width: 150px;
@@ -37,25 +37,14 @@ input{
 
 }
 .picture{
-    margin-left: 750px;
     width: 80px;
 
 }
-h2{
-    display: inline;
-    font-size: 50px;
-    margin-left: 50px;
-    float: left;
-}
-p{
-    display: inline;
-    margin-left: 800px;
-    float: right;
 
+.calendar-wrapper{
+    margin-left: 10px;
 }
-h3{
-    display: inline;
-    font-size: 50px;
-    margin-left: 50px;
-    float: right;
+
+.officers-wrapper{
+    
 }
