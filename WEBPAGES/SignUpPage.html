@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type = "text/css" href="StylesForWebpages.css" />  
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
 </head>
 <body>
 <div>
     <h1 id="login">CSUSM Powerlifting</h1>
     <img src="https://www.csusm.edu/communications/images/branding-images/spirit-logo01.jpg" alt="Cougar Logo" class="center">
+    <form action="process_signup.php" method="post" novalidate>
+        <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label class="email">Email</label>
+            <input  type="email" id="email" name="email">
+        </div>
+        <!-- <label class="PhoneNumber">Phone Number (recommended)</label>
+        <input  type="text"> -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
 
-    <br> <br>
-    <label class="email">Email</label> <br>
-    <input  type="text"> <br> <br> 
-    <label class="PhoneNumber">Phone Number (recommended)</label> <br>
-    <input  type="text"> <br> <br> 
-    <label class="Password">Password</label> <br>
-    <input type="text"> <br> <br> <br>
+        <div>
+            <label for="password_confirmation">Repeat Password</label>
+            <input type="password" name="password_confirmation" id="password_confirmation">
+        </div>
 
-    <button class="Creat Account">Create Account</button>
-
+        <button id="submit-btn">Create Account</button>
+    </form>
 </div>
 
 </body>
