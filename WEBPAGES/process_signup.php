@@ -27,6 +27,19 @@ if (!$stmt->prepare($sql)) {
     die("SQL error:" . $mysqli->error);
 }
 
+$stmt->bind_param("sss", $_POST["name"], $_POST["email"], $_POST["password"]);
+
+if ($stmt->execute()) {
+
+    header("Location: AnnouncmentsPage.html");
+    exit;
+} else {
+    if ($mysqli->errno === 1062) {
+        die("email already taken");
+    }
+    die($mysqli->error . " " . $mysqli->errno);
+}
+
 // $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-print_r($_POST);
+// print_r($_POST);
 // var_dump($password_hash);
