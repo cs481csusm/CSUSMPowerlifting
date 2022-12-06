@@ -1,26 +1,27 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Styles-Profile-Maxes.css" />
 </head>
 
 <body>
     <!---SideBarNavigation Menu Code-->
-    <div class="sidenav">
-        <a href="AnnouncmentsPage.php">Home</a>
-        <a href="EditProfilePage.html">Profile</a>
-        <a href="CurrentMaxesPage.html">Maxes</a>
-        <button class="dropdown-btn">
-            Workouts
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="BuildingBlockOnePage.html">Week 1</a>
-            <a href="BuildingBlockTwoPage.html">Week 2</a>
-            <a href="ExceedBlockPage.html">Week 3</a>
-            <a href="RecoveryBlockPage.html">Week 4</a>
+    <div id="sidebar" class="col-lg-3">
+        <div class="sidenav">
+             <a href="AnnouncmentsPage.php">Home</a>
+              <a href="EditProfilePage.html">Profile</a>
+             <a href="CurrentMaxesPage.html">Maxes</a>
+             <button class="dropdown-btn">Workouts
+                 <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown">
+                <a class="active" href="BuildingBlockOnePage.html">Week 1</a>
+                <a href="BuildingBlockTwoPage.html">Week 2</a>
+                 <a href="ExceedBlockPage.html">Week 3</a>
+                 <a href="RecoveryBlockPage.html">Week 4</a>
+            </div>
         </div>
     </div>
 
@@ -46,28 +47,23 @@
     <!--- End of Menu Code --->
     
     <form class="centerprofile">
-        <h1>Edit Profile</h1><br />
-        <div style="float:left;">
-            <label for="fname">First Name </label><br>
-            <input id="firstname" name="user[first_name]" size="30%" type="text" value="John" />
-        </div>
-        <div style="float:left;">
-            <label for="lname"> Last Name</label><br>
-            <input id="lastname" name="user[last_name]" size="30" type="text" value="Doe" />
+        <h1>Edit Profile</h1>
+        <div class="profile-inputs">
+            <label for="name">Name </label><br>
+            <input id="name" name="user[first_name]" size="30%" type="text" value="John" />
         </div>
         <br>
-        <div class="clear">&nbsp;</div><br><br />
-        <div class="clear"><br />
-            <label for="email">Email </label><br>
-            <input id="email" name="user[email]" size="50%" type="text" value="example@email.com" /><br>
-            <br><br />
-            <label for="phone">Phone Number </label><br>
-            <input id="phonenumber" name="user[phonenumber]" size="50%" type="text" value="760-777-7777" /><br>
-            <br><br />
-            <label for="userpassword">Password </label><br>
-            <input type=password id="password" name="user[password]" size="50%" type="text" value="Password" /><br>
-            <br><br />
-            <button1 class=Save>Save</button1>
+        <!-- <div class="clear">&nbsp;</div> -->
+        <div class="clear">
+            <div  class="profile-inputs">   
+                <label for="email">Email </label><br>
+                <input id="email" name="user[email]" size="30" type="text" value="example@email.com" />
+            </div>
+            <div  class="profile-inputs">
+                <label for="userpassword">Password </label><br>
+            <input type=password id="password" name="user[password]" size="30" type="text" value="Password" />
+            </div>
+            <div id="button-input"><button1 class=Save>Save</button1></div>
         </div>
     </form>
 

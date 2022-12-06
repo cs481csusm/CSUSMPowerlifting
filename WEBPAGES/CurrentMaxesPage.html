@@ -1,26 +1,27 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Styles-Profile-Maxes.css" />
 </head>
 
 <body>
     <!---SideBarNavigation Menu Code-->
-    <div class="sidenav">
-        <a href="AnnouncmentsPage.php">Home</a>
-        <a href="EditProfilePage.html">Profile</a>
-        <a href="CurrentMaxesPage.html">Maxes</a>
-        <button class="dropdown-btn">
-            Workouts
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="BuildingBlockOnePage.html">Week 1</a>
-            <a href="BuildingBlockTwoPage.html">Week 2</a>
-            <a href="ExceedBlockPage.html">Week 3</a>
-            <a href="RecoveryBlockPage.html">Week 4</a>
+    <div id="sidebar" class="col-lg-3">
+        <div class="sidenav">
+             <a href="AnnouncmentsPage.php">Home</a>
+              <a href="EditProfilePage.html">Profile</a>
+             <a href="CurrentMaxesPage.html">Maxes</a>
+             <button class="dropdown-btn">Workouts
+                 <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown">
+                <a class="active" href="BuildingBlockOnePage.html">Week 1</a>
+                <a href="BuildingBlockTwoPage.html">Week 2</a>
+                 <a href="ExceedBlockPage.html">Week 3</a>
+                 <a href="RecoveryBlockPage.html">Week 4</a>
+            </div>
         </div>
     </div>
 
@@ -45,21 +46,27 @@
 
     <!--- End of Menu Code --->
 
-    <form class="center"><br />
+    <form class="center" action="process_maxes.php" method="post"><br />
         <h1 class="center">Current Maxes</h1>
         <p>Please enter your current maxes in Kilograms:</p><br />
         <div>
-            <label for="Squat">Squat </label><br>
-            <input class="" id="squat" size="50%" type="text" /><br>
+            <div>   
+                <label for="maxsquat">Squat </label><br>
+                <input name="maxsquat" id="squat" size="50%" type="number" /><br>
+            </div>
             <br><br />
-            <label for="Deadlift">Deadlift </label><br>
-            <input id="deadlift" size="50%" type="text" /><br>
+            <div> 
+                <label for="maxdeadlift">Deadlift </label><br>
+                <input name="maxdeadlift" id="deadlift" size="50%" type="number" /><br>
+            </div>
             <br><br />
-            <label for="BenchPress">Bench Press </label><br>
-            <input id="benchpress" size="50%" type="text" /><br>
+            <div> 
+                <label for="maxbench">Bench Press </label><br>
+                <input name="maxbench" id="benchpress" size="50%" type="number" /><br>
+            </div>
             <br><br />
-            <button1 class=Submit>Submit</button1>
         </div>
+            <button type="submit" name="submit" id="submit-btn">Submit</button>
     </form>
 
 </body>

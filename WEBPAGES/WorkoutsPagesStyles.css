@@ -10,7 +10,7 @@ table, th, td{
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -96,4 +96,8 @@ table, th, td{
 
   input{
     width: 100%;
+  }
+
+  .container{
+    text-align: center;
   }

@@ -11,10 +11,18 @@ button1 {
 }
 
 .centerprofile {
-    margin-left:13%;
-    margin-top:2%;
+    /* margin-left:13%;
+    margin-top:2% */
+    text-align: center;
 }  
 
+.profile-inputs{
+    margin-top: 10px;
+}
+
+#button-input{
+    margin-top: 20px;
+}
 .center {
     display: block;
     text-align: center;

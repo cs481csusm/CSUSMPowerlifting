@@ -11,9 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $userinfo = $result->fetch_assoc();
 
-    // var_dump($userinfo);
-    // exit;
-
     if ($userinfo) {
         if (password_verify($_POST["password"], $userinfo["password_hash"])) {
             session_start();

@@ -2,14 +2,6 @@
 use LDAP\Result;
 
 session_start();
-/*
-if(isset($_SESSION["user_id"])){
-$mysqli = require __DIR__ . "/database.php";
-$sql = "SELECT * FROM user
-WHERE id = {$_SESSION["user_id"]}";
-$result = $mysqli->query($sql);
-$user = $result->fetch_assoc();
-}*/
 ?>
 
 <!DOCTYPE html>
@@ -31,26 +23,28 @@ $user = $result->fetch_assoc();
 
   <?php if (isset($_SESSION["user_id"])): ?>
 
-  <div id="header-wrapper" class="col-lg-12">
-    <h1>Announcements</h1>
-  </div>
-  <div id="sidebar-wrapper" class="col-lg-3">
-    <div class="sidenav">
-      <!-- <a class="active" href="#home">Workouts</a> -->
-      <a href="AnnouncmentsPage.php">Home</a>
-      <a href="EditProfilePage.html">Profile</a>
-      <a href="CurrentMaxesPage.html">Maxes</a>
-      <button class="dropdown-btn">Workouts
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown">
-        <a href="BuildingBlockOnePage.html">Week 1</a>
-        <a href="BuildingBlockTwoPage.html">Week 2</a>
-        <a href="ExceedBlockPage.html">Week 3</a>
-        <a href="RecoveryBlockPage.html">Week 4</a>
+  <section class="layout">
+    <div id="header-wrapper" class="col-lg-12">
+      <h1>Announcements</h1>
+    </div>
+    <div id="sidebar-wrapper" class="col-lg-3">
+      <div class="sidenav">
+        <!-- <a class="active" href="#home">Workouts</a> -->
+        <a href="AnnouncmentsPage.php">Home</a>
+        <a href="EditProfilePage.html">Profile</a>
+        <a href="CurrentMaxesPage.html">Maxes</a>
+        <button class="dropdown-btn">Workouts
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown">
+          <a href="BuildingBlockOnePage.html">Week 1</a>
+          <a href="BuildingBlockTwoPage.html">Week 2</a>
+          <a href="ExceedBlockPage.html">Week 3</a>
+          <a href="RecoveryBlockPage.html">Week 4</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <div class="calendar-wrapper" style="float: left;">
     <label class="Calender col-lg-11">
       <h2>Friday, November 4th 2022:</h2>
