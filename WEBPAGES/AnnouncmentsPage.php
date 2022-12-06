@@ -29,7 +29,6 @@ session_start();
     </div>
     <div id="sidebar-wrapper" class="col-lg-3">
       <div class="sidenav">
-        <!-- <a class="active" href="#home">Workouts</a> -->
         <a href="AnnouncmentsPage.php">Home</a>
         <a href="EditProfilePage.html">Profile</a>
         <a href="CurrentMaxesPage.html">Maxes</a>
@@ -42,6 +41,7 @@ session_start();
           <a href="ExceedBlockPage.html">Week 3</a>
           <a href="RecoveryBlockPage.html">Week 4</a>
         </div>
+        <p><a href="Logout.php">Log out</a></p>
       </div>
     </div>
   </section>
@@ -96,8 +96,6 @@ session_start();
     <p>Email:</p>
     <p>Phone Number:</p> <br>
 
-    <p><a href="Logout.php">Log out</a></p>
-
   </div>
 
 
@@ -118,7 +116,7 @@ session_start();
     }</script>
 
   <?php else: ?>
-  <p><a href="LoginPage.php">Log in</a> or <a href="SignUpPage.php">sign up</a></p>
+  <p>Hi there! Please <a href="LoginPage.php">Log in</a> or <a href="SignUpPage.html">sign up </a> in order to access the site.</a></p>
 
   <?php endif; ?>
 </body>

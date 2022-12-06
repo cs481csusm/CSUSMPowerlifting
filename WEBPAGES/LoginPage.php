@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="StylesForWebpages.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
 
 </head>
 
@@ -45,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             class="center">
 
         <?php if ($is_invalid): ?>
+            <br>
         <em>Invalid Login</em>
         <?php endif; ?>
         <form method="post">
