@@ -11,9 +11,8 @@ button1 {
 }
 
 .centerprofile {
-    /* margin-left:13%;
-    margin-top:2% */
     text-align: center;
+    /* float: right; */
 }  
 
 .profile-inputs{

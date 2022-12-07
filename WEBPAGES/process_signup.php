@@ -33,7 +33,7 @@ $stmt->bind_param("sss", $_POST["name"], $_POST["email"], $password_hash);
 
 if ($stmt->execute()) {
 
-    header("Location: SignUpSuccess.html");
+    header("Location: AnnouncmentsPage.php");
     exit;
 } else {
     if ($mysqli->errno === 1062) {

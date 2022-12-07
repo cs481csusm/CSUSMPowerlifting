@@ -46,25 +46,32 @@
     </script>
 
     <!--- End of Menu Code --->
+
+    <div class="currentprofile">
+        
+    </div>
     
-    <form class="centerprofile">
+    <form class="centerprofile" action="Edit_Profile.php" method="post">
         <h1>Edit Profile</h1>
         <div class="profile-inputs">
             <label for="name">Name </label><br>
-            <input id="name" name="user[first_name]" size="30%" type="text" value="John" />
+            <input id="name" name="name" size="30%" type="text"/>
         </div>
         <br>
         <!-- <div class="clear">&nbsp;</div> -->
         <div class="clear">
             <div  class="profile-inputs">   
                 <label for="email">Email </label><br>
-                <input id="email" name="user[email]" size="30" type="text" value="example@email.com" />
+                <input id="email" name="email" size="30" type="email"/>
             </div>
             <div  class="profile-inputs">
-                <label for="userpassword">Password </label><br>
-            <input type=password id="password" name="user[password]" size="30" type="text" value="Password" />
+                <label for="password">Password </label><br>
+            <input type=password id="password" name="password" size="30" type="password"/>
             </div>
-            <div id="button-input"><button1 class=Save>Save</button1></div>
+            <div id="button-input">
+                <!-- <button id="submit-btn">Save</button> -->
+                <input type="submit" name="edit">
+            </div>
         </div>
     </form>
 
